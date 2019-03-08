@@ -4,6 +4,7 @@ import { Subject } from 'rxjs'
 @Injectable()
 export class EventService {
     getEvents() {
+        // return EVENTS
         // subject is an observable and we are adding data to the next stream
         // we are doing this to a setTimeout to simulate asynchrony. 
         let subject = new Subject()

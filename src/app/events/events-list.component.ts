@@ -28,7 +28,7 @@ export class EventsListComponent implements OnInit{
     }
     //getEvent is going return an Observable and you get data out by subscribing to it. 
     ngOnInit() {     
-        this.events = this.route.snapshot.data['events']
+        this.eventService.getEvents().subscribe(events => { this.events = events })
     }
 
     handleThumbnailClick(eventName) {
