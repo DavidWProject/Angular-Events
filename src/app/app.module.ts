@@ -36,6 +36,7 @@ import { Error404Component } from './errors/404.component';
     EventService, 
     ToastrService, 
     EventRouteActivator,
+    EventListResolver,
     { 
       provide: 'canDeactivateCreateEvent', 
       useValue: checkDirtyState
